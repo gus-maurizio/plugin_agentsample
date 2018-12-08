@@ -11,6 +11,6 @@ go get github.com/karalabe/xgo
 ```
 Simply specify the import path you want to build, and xgo will do the rest:
 ```
-xgo github.com/gus-maurizio/sre-agent-plugins
+xgo -buildmode plugin -targets linux/amd64,darwin/amd64 -dest plugins github.com/gus-maurizio/plugin_agentsample
 ```
 
